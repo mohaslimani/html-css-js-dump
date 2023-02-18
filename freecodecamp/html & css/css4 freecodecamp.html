@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>inheritence</title>
+	<style>
+		body
+		{
+			background-color: black;
+			color: green;
+			font-family: monospace;
+		}
+		.violet-text
+		{
+			color: violet !important;
+		}
+		#orange-text
+		{
+			color: orange;
+		}
+		.pink-text
+		{
+			color: pink;
+		}
+		.blue-text
+		{
+			color: blue;
+		}
+		h1,h2
+		{
+			color: plum;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<h1> Inheritence </h1>
+	<p>
+	Remember, you can style your body element just like any other HTML element, and all your other elements will inherit your body element's styles.
+	</p>
+
+	<h2> overriding the body using a CLASS</h2>
+	<p class="pink-text"> Our pink-text class overrode our body element's CSS declaration!</p>
+	<p class="blue-text pink-text"> Our blue-text class overrode our pink-text element's CSS declaration!</p>
+	<p>  It doesn't matter which order the classes are listed in the HTML element class="blue-text pink-text" or class="pink-text blue-text" </p>
+	<p> However, the order of the class declarations in the "style" section is what is important. The second declaration will always take precedence over the first. </p>
+	
+	<h2> overriding all CLASS using the ID </h2>
+	<p class="blue-text pink-text" id="orange-text"> It doesn't matter whether you declare the ID attribute CSS above or below class,
+	<br> since the id attribute will always take precedence.</p>
+	
+	<h2>Override Class and ID Declarations with Inline Styles(style="")</h2>
+	<p style="color: white;" class="blue-text pink-text" id="orange-text"> inline override the CLASS and ID</p>
+	<p class="blue-text pink-text" id="orange-text" style="color: white;"> and it doesnt matter the inline order inside the html element</p>
+
+	<h2> Override All Other Styles by using Important </h2>
+	<p class="blue-text pink-text violet-text" id="orange-text"> the keyword !important make it impossible to be overriden
+	<br> here is the syntax :::
+	<br> .violet-text {color: violet <h style="background-color: white;">!important;</h> } </p>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Metadata elements, such as link, meta, title, and style, typically go inside the head element. -->
+<head>
+	<title>
+		pp
+	</title>
+</head>
+
+<body>
+<h2>CatPhotoApp</h2>
+
+<main>
+
+  
+  <!-- _blank pour ouvrir dans un nouvelle onglet -->
+  <!-- You can use a (anchor) elements to link to content outside of your web page. -->
+  <p>
+	View more <a href="https://www.freecatphotoapp.com" target="_blank">cat photos</a>
+  </p>
+
+  <!--a (anchor) elements can also be used to create internal links to jump to different sections within a webpage -->
+  <a href="#down"> down </a>
+  <!-- Dead Links leads to nothing #for changing the behavior of a link using JavaScript-->
+	</br><a href="#"> i am dead a link</a>
+
+  <!-- the image now is clickable and leads to the image only (target="_blank" in a new tab)-->
+  <a href="https://www.bit.ly/fcc-relaxing-cat" target="_blank">
+	<img src="https://www.bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back.">
+  </a>
+
+  <!-- ul: unordred list : the line begin with a tab 
+	and li: are used to make list of things-->
+  <ul>
+	this is a list of what cats love
+	<li>milk</li>
+	<li>cheese</li>
+	<li>you</li>
+  </ul>
+
+  <p>Top 3 things cats hate:</p>
+  <!-- ol: ordred list : numbred -->
+  <ol>
+    <li>flea treatment</li>
+    <li>thunder</li>
+    <li>other cats</li>
+  </ol>
+  <!-- input has no closing tag-->
+  <input type="text">
+  <input type="time">
+  <!-- placeholder is what to show on the input before the user start inputting -->
+  <!-- (hitting enter will send the data to the specific url)
+You can do this by specifying an action attribute on your form element. 
+<form action="/url-where-you-want-to-submit-form-data">
+	<input>
+</form>	-->
+<!-- Add a Submit Button to a Form -->
+<!-- required : dont submit with the field empty -->
+	<form action="https://www.google.com">
+		<input type="text" placeholder="this is the placeholder" required>
+		<button type="submit">Submit this shit this url</button>
+	</form>
+
+<!-- input : type="radio" : choices -->
+<!-- you can select either of them or both-->
+<label> 
+	<p>you can select both of us</p>
+	<input type="radio" name="first">first
+	<input type="radio" name="second">second
+</label>
+<!-- you can select just one (same name)-->
+</br>
+<label> 
+	<p>select just one</p>
+	<input type="radio" name="choice">choose me
+	<input type="radio" name="choice">or me
+</label></br>
+
+<!-- This allows assistive technologies to create a linked relationship between the label and the related input element -->
+<p>just another notation with labels, u need to select just one the input tags have the same names</p>
+<input id="indoor1" type="radio" name="indor">
+<label for="indoor1">Indoor1</label>
+<input id="indoor2" type="radio" name="indor">
+<label for="indoor2">Indoor2</label>
+<input id="indoor3" type="radio" name="indor">
+<label for="indoor3">Indoor3</label>
+
+<!-- checked -->
+<h3>this is like a radio type but the same name tag doesnt make it a one choice shit</h3>
+<label for="choice"><input id="choice" type="checkbox" name="personality" checked> Loving</label>
+<label for="choice"><input id="choice" type="checkbox" name="personality"> hating</label>
+
+<!--
+	Here, you have two radio inputs. 
+	When the user submits the form with the indoor option selected, 
+	the form data will include the line: indoor-outdoor=indoor. 
+	This is from the name and value attributes of the "indoor" input.
+-->
+
+<h3>here the value is the VALUE given to the ATTRIBUT(name) indoor-outdoor the same for the checkbox shit</h3>
+<!-- checked :: Check Radio Buttons and Checkboxes by Default -->
+<h3>and also checked means it will be selected by default</h3>
+<label for="indoor"><input id="indoor" checked value="indoor" type="radio" name="indoor-outdoor"> Indoor</label>
+<label for="outdoor"><input id="outdoor" value="outdoor" type="radio" name="indoor-outdoor"> Outdoor</label><br>
+
+<br>
+<div>The div element, also known as a division element, is a general purpose container for other elements.</div>
+
+
+
+  <p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>
+  <p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>
+  <p>Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched</p>
+  <p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>
+  <p>Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched
+  <p>Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>
+  <p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff. Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched. Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>
+  <p>Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched. Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff. Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>
+  <p>Meowwww loved it, hated it, loved it, hated it yet spill litter box, scratch at owner, destroy all furniture, especially couch or lay on arms while you're using the keyboard. Missing until dinner time toy mouse squeak roll over. With tail in the air lounge in doorway. Man running from cops stops to pet cats, goes to jail.</p>
+  <p>Intently stare at the same spot poop in the plant pot but kitten is playing with dead mouse. Get video posted to internet for chasing red dot leave fur on owners clothes meow to be let out and mesmerizing birds leave fur on owners clothes or favor packaging over toy so purr for no reason. Meow to be let out play time intently sniff hand run outside as soon as door open yet destroy couch.</p>
+</main>
+<footer id="down">Copyright Cat Photo App</footer>
+
+
+</body>
+</html>

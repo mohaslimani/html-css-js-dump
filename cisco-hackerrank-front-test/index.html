@@ -1,0 +1,168 @@
+<style>
+  html {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 16px;
+  }
+
+  .logo {
+    width: 4rem;
+    margin: 1rem;
+  }
+    .flex-row {
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 5px 0px;
+    }
+    .hero1 > a , .hero1 > button{
+        margin: 0px 20px;
+    }
+    .hero1 > button {
+        text-decoration: none;
+        border: none;
+        font-size: 16px;
+        font-weight: bold;
+        background: white;
+    }
+    button img {
+        padding: 0px 10px;
+    }
+    .line {
+        height: 3px;
+        width: 100%;
+        background: lightgray;
+        margin-bottom: 20px;
+    }
+    .container {
+        width: 960px;
+        margin: auto;
+    }
+    h2.contact{
+        font-size: 30px;
+        text-align:left;
+        margin: 30px 10px;
+    }
+    input {
+        width: 100%;
+        margin: 10px 0px;
+        border-radius: 15px;
+        height: 30px;
+    }
+    .flex-column {
+        display:flex;
+        flex-direction: column;
+        align-items: left;
+        width: 90%;
+        margin: 0px 5px;
+    }
+    .space {
+        justify-content: space-between;
+    }
+    textarea {
+        width: 100%;
+        height: 120px;
+        border-radius: 15px;
+    }
+    #check {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    #check > input {
+        margin: 10px 10px;
+        width: 20px;
+    }
+    .submit {
+        align-self: start;
+        background: green;
+        width: 50%;
+        color: white;
+        font-size: 16px;
+        text-align: center;
+    }
+    
+    p.flex-row > img{
+        margin-right: 15px;
+    }
+    p.flex-row > label {
+        width: 15%;
+    }
+
+</style>
+
+
+<head>
+  <meta charset="utf-8">
+</head>
+<body>
+  <!-- <button class="menu-button">
+    <img class="menu-img" src="./media/list-menu_28.svg"/>
+  </button> -->
+    <div class="hero flex-row space">
+        <div class="hero1 flex-row space">
+            <img class="logo" src="./media/cisco-logo.svg"/>
+            <a>Products</a>
+            <a>Partners</a>
+            <a>Support</a>
+            <a>Contact Us</a>
+        </div>
+        <div class="flex-row hero1">
+            <button class="flex-row space"><img src="./media/search_20.svg">Search</button>
+            <button class="flex-row space"><img src="./media/language_20.svg">EN</button>
+        </div>
+    </div>
+    <div class="line"></div>
+    
+    <div class="container">
+        <h2 class="contact">Contact Us</h2>
+        <p>Please fill the form below and we will aim to respond within two working days.</p>
+        <form onSubmit="javascript:event.preventDefault()" id="form" class="form">
+            <div class="flex-row">
+                <div class="flex-column">
+                    <label class="label label-fname" for="fname">First name</label>
+                    <input class="input input-fname" type="text" id="fname" name="fname" />
+                </div>
+                <div class="flex-column">
+                    <label class="label label-lname" for="lname">Last name</label>
+                    <input class="input input-lname" type="text" id="lname" name="lname" />
+                </div>
+            </div>
+            <label class="label" for="email">Email</label>
+            <input class="input" type="text" id="email" name="email" />
+            <label class="label" for="phone">Phone number</label>
+            <input class="input"type="text" id="phone" name="phone" />
+            <label class="label" for="message">Message</label>
+            <textarea class="input" id="message" name="message"></textarea>
+            <p>How would you like us to contact you?</p>
+            <div id="check">
+                <input class="checkbox"type="checkbox" id="respond-by-email" name="respond-by-email" />
+                <label class="checkbox-label" for="respond-by-email">Email</label>
+                <input class="checkbox"type="checkbox" id="respond-by-phone" name="respond-by-phone" />
+                <label class="checkbox-label" for="respond-by-phone">Phone</label>
+                <input class="checkbox"type="checkbox" id="respond-by-post" name="respond-by-post" />
+                <label class="checkbox-label" for="respond-by-post">Post</label>
+            </div>
+            <input class="submit" type="submit" value="Submit" class="submit" />
+        </form>
+        <div class="line"></div>
+
+        <div class="flex-column">
+            <p class="flex-row"> Alternatively, you can contact us by email, phone or post.</p>
+            <p class="flex-row">
+                <img src="./media/email_24.svg"/>
+                <label>Email us:</label>info@cisco.com
+            </p>
+            <p class="flex-row">
+                <img src="./media/handset_24.svg">
+                <label>Phone us:</label>+44 (0)208 824 1000
+            </p>
+            <p class="flex-row">
+                <img src="./media/notes_24.svg"/>
+                <label>Post:</label> 9-11 New Square, Feltham TW14 8HA, UK
+            </p>
+        </div>
+    </div>
+    <div class="line" style="height: auto; padding: 5px; text-align: center; margin-top: 30px;">
+        © 2021 Cisco and/or its affiliates. All rights reserved.</div>
+</body>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet">
+
+<html>
+<head>
+	<title>CSS</title>
+	<style>
+		h3
+		{
+			color:blue;
+		}
+		.colored-text
+		{
+			color: green;
+		}
+		p
+		{
+			font-size: 20px;
+			font-family: monospace;
+		}
+		h5
+		{
+			font-family: 'Odibee Sans', Lobster;
+		}
+		div1
+		{
+			font-family: Lobster, sans-serif;
+		}
+		.smaller-image
+		{
+			width: 100px;
+		}
+		.rad-border
+		{
+			border-radius: 10px;
+		}
+		.green-border 
+  		{
+    		border-color: green;
+    		border-width: 5px;
+    		border-style: solid;
+			border-radius: 50%;
+  		}
+		.silver-background
+		{
+			background-color: silver;
+		}
+		#first-id
+		{
+			color:tomato;
+		}
+	</style>
+</head>
+<body>
+	<!-- all p elements has a font-size of 20px -->
+	<!-- you can specify a style for a block like this -->
+	<h2 style="color: red;">this is a red title</h2>
+	<!-- or you can specify all blocks with the style block -->
+	<h3>this the first h3 blue element specified with the style block</h3>
+	<h3>this the second blue h3</h3>
+
+	<!-- Classes allow you to use the same CSS styles on multiple HTML elements. -->
+	<p class="colored-text">this is a p block with a green color from .colored-text class</p>
+	
+	<h6 class="colored-text">this is a h6 block with a green color from .colored-text class</h6>
+
+	<p> i am also a p element and for all p elements it font are in monospace with size of 20px</p>
+	<h5>u can download fonts using link tag and specify the link with href (this is Odibee+Sans font and will switch to Lobster if the first is missing)</h5>
+
+	<div1>
+	When one font isn't available, you can tell the browser to "degrade" to another font.<br>
+	Generic font family names are not case-sensitive. Also, they do not need quotes because they are CSS keywords.
+	</div1>
+	<br>
+	<a href="#"><img class="smaller-image green-border" src="https://bit.ly/fcc-relaxing-cat" alt="u will see me if u dont have internet or if u messed up with the image url"></a>
+	<br><br>
+	<div2 class="green-border rad-border">u can use multiple class in a same tag using a space class="first-class second-class"</div2>
+
+	<br><br>
+	<div3 class="silver-background">You can set an element's background color 
+	<br> with the background-color property.</div3>
+	<br>
+	<h4 id="first-id">
+		id attributes should be unique. <br>
+		Browsers won't enforce this, but it is a widely agreed upon best practice. <br>
+		So please don't give more than one element the same id attribute.<br>
+		You can use an id to style a single element <br>
+		and later you'll learn that you can use them to select and modify specific elements with JavaScript.<br>
+		The syntax for id is: write a hash character (#), followed by an id name. Then, define the CSS properties<br>
+	</h4>
+	
+
+
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Margin and Padding</title>
+		<style>
+		h2, #pad1, #pad2, div, #margin1, #margin2, #neg-marg1, #neg-marg2, h5
+		{
+			border-style: solid;
+			border-color: black;
+			border-width: 5px;
+			text-align: center;
+		}
+		h5
+		{
+			background-color: violet;
+		}
+		p
+		{
+			text-align: center;
+		}
+		#pad1
+		{
+			background-color: red;
+			padding: 10px;
+		}
+		#pad2
+		{
+			background-color: green;
+			padding: 20px;
+		}
+		#margin1
+		{
+			background-color: red;
+			margin: 10px;
+		}
+		#margin2
+		{
+			background-color: green;
+			margin: 60px;
+		}
+		#neg-marg1
+		{
+			background-color: red;
+			padding: 20px;
+			margin: -5px;
+		}
+		#neg-marg2
+		{
+			background-color: green;
+			padding: 20px;
+			margin: -15px;
+		}
+		div
+		{
+			background-color: yellow;
+			padding :10px;
+		}
+	</style>
+</head>
+<body>
+	
+	<h1 style="text-align: center;">
+		<p> all HTML elements are essentially little rectangles. </p>
+		<p> Three important properties control the space that surrounds each HTML element:</p>
+		<p> border , margin , padding</p>
+	</h1>
+	<h2> Adjust the Padding of an Element </h2>
+	<br>
+	<p> padding controls the amount of space between the element's content and its border. </p>
+	<p id="pad1"> padding 10px, </p>
+	<p id="pad2"> padding 20px, </p>
+	<br>
+	<h2>Adjust the Margin of an Element</h2>
+	<p>margin controls the amount of space between an element's border () and surrounding elements. (div)</p>
+	<div>
+		<p id="margin1"> margin 10px </p>
+	</div>
+	<br>
+	<div>
+		<p id="margin2"> margin 60px </p>		
+	</div>
+	<br>
+	<h2>Negative Margin</h2>
+	<p> If you set an element's margin to a negative value, the element will grow larger. </p>
+	<p> the div element here has 10px padding (separate it from the 2p element)</p>
+	<p> both the p element has a 20px as padding (to make the text clear) </p>
+	<p> border 5px </p>
+	<p> finally see the margins </p>
+	<div>
+		<p id="neg-marg1"> margin -15px </p>
+		<p id="neg-marg2"> margin -5px </p>		
+	</div>
+	<br>
+	<div>
+		<p id="neg-marg2"> margin -5px </p>
+		<p id="neg-marg1"> margin -15px </p>		
+	</div>
+	<h2> Padding to Each Side </h2>
+	<div>
+		<h5 style="padding: 100px;"> padding 100px </h5>
+		<h5 style="padding-left: 100px;"> padding-left: 100px </h5>
+		<h5 style="padding-right: 100px;"> padding-right 100px </h5>
+		<h5 style="padding-top: 100px;"> padding-top 100px </h5>
+		<h5 style="padding-bottom: 100px;"> padding-bottom 100px </h5>
+		<h5 style="padding-right: 100px; padding-bottom: 100px;"> padding-right-&-bottom 100px </h5>
+		<h5 style="padding-right: 100px; padding-bottom: 100px;padding-top: 30px;padding-left: 30px;"> padding-right-&-bottom 100px  padding-left-&-top 30px </h5>
+	</div>
+	<h2> Padding to Each Side </h2>
+	<p> no border</p>
+	<div>
+		<h5 style="margin: 100px;"> margin 100px </h5>
+		<h5 style="margin-left: 100px;"> margin-left: 100px </h5>
+		<h5 style="margin-right: 100px;"> margin-right 100px </h5>
+		<h5 style="margin-top: 100px;"> margin-top 100px </h5>
+		<h5 style="margin-bottom: 100px;"> margin-bottom 100px </h5>
+		<h5 style="margin-right: 100px; margin-bottom: 100px;"> margin-right-&-bottom 100px </h5>
+		<h5 style="margin-right: 100px; margin-bottom: 100px;margin-top: 30px;margin-left: 30px;"> margin-right-&-bottom 100px  margin-left-&-top 30px </h5>
+	</div>
+	<br>
+	<p>has border & Clockwise Notation</p>
+	<p>padding: 10px 20px 10px 20px;</p>
+	<p>These four values work like a clock: top, right, bottom, left</p>
+	<div><h5 style="margin: 100px;"> margin 100px </h5> </div>
+	<div><h5 style="margin: 0px 0px 0px 100px;"> margin-left: 100px </h5> </div>
+	<div><h5 style="margin: 0px 100px 0px 0px;"> margin-right 100px </h5> </div>
+	<div><h5 style="margin: 100px 0px 0px 0px;"> margin-top 100px </h5> </div>
+	<div><h5 style="margin: 0px 0px 100px 0px;"> margin-bottom 100px </h5> </div>
+	<div><h5 style="margin: 0px 100px 100px 0px;"> margin-right-&-bottom 100px </h5> </div>
+	<div><h5 style="margin: 30px 100px 100px 30px;"> margin-right-&-bottom 100px  margin-left-&-top 30px </h5> </div>
+	<p></p>
+	<p></p>
+	<p></p>
+	<p></p>
+	<p></p>
+	<p></p>
+</body>
+</html>
